@@ -1,0 +1,16 @@
+{
+  "name": "portfolio-website",
+  "version": "1.0.0",
+  "description": "A portfolio website",
+  "main": "index.js",
+  "scripts": {
+    "start": "echo \"Error: no start script specified\" && exit 1"
+  },
+  "dependencies": {},
+  "devDependencies": {
+    "htmlhint": "^0.14.0",
+    "stylelint": "^14.0.1"
+  },
+  "author": "",
+  "license": "ISC"
+}
