@@ -16,16 +16,23 @@ jobs:
       - name: Checkout code
         uses: actions/checkout@v2
 
+      
       - name: Set up Node.js
         uses: actions/setup-node@v2
         with:
           node-version: '16'
 
+      
       - name: Install dependencies
-        run: npm install --save-dev htmlhint stylelint
+        run: |
+          npm install --save-dev htmlhint stylelint
+          npm install  # This installs other project dependencies from package.json
 
+      
       - name: Run HTMLHint
         run: npx htmlhint '**/*.html'
 
+      
       - name: Run Stylelint
         run: npx stylelint '**/*.css'
+
